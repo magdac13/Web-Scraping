@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Details</title>
+</head>
+<body>
+<h1>{{ movie.title }}</h1>
+<div>
+<p class="card"><a hres="#">Reżyser: {{ movie.director }}</a></p>
+<p class="card">Scenariusz: {{ movie.screenplay }}</p>
+<p class="card">Rok: {{ movie.year }}</p>
+<p>Ocena: {{ movie.rating }}</p>
+<p>Gatunek:</p>
+</div>
+<ul>
+{% for genre in movie.genre.all %}
+  <li>{{ genre.name }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
