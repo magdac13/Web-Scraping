@@ -61,25 +61,13 @@ def find_price_per_m():
             print(element.text)
 
 
-
-# print(find_price_per_m())
-
+print(find_price_per_m())
 
 
-
-
-
-
-
-
-
-
-
-
-#soup = BeautifulSoup(html_text, 'lxml')
-#prices = soup.find_all('span', class_='css-s8wpzb e1brl80i1')
-#for price in prices:
-#    print(price.text)
+soup = BeautifulSoup(html_text, 'lxml')
+prices = soup.find_all('span', class_='css-s8wpzb e1brl80i1')
+for price in prices:
+    print(price.text)
 
 
 #sellers = prices.find_all('p', class_='css-e80z7t e1dxhs6v4')
